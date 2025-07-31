@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Animated Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="animate">Expense Tracker</h1>
+
+    <div class="input-section">
+      <input type="number" id="budget-input" placeholder="Enter Budget">
+      <button onclick="setBudget()">Set Budget</button>
+    </div>
+
+    <div class="input-section">
+      <input type="text" id="expense-desc" placeholder="Expense Description">
+      <input type="number" id="expense-amount" placeholder="Amount">
+      <input type="date" id="expense-date">
+      <!-- <input type="file" id="expense-image" accept="image/*"> -->
+      <button onclick="addExpense()">Add Expense</button>
+    </div>
+
+    <div class="summary">
+      <div class="card budget">
+        <p>Budget</p>
+        <h2 id="budget">$0</h2>
+      </div>
+      <div class="card expenses">
+        <p>Expenses</p>
+        <h2 id="expenses">$0</h2>
+      </div>
+      <div class="card balance">
+        <p>Balance</p>
+        <h2 id="balance">$0</h2>
+      </div>
+    </div>
+
+    <h2 class="animate">Expenses</h2>
+    <div id="expense-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
